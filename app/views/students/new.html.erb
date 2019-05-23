@@ -1,0 +1,13 @@
+<h1>New Student Form</h1>
+
+<%= form_for @student do |f| %>
+  <%= f.label "First name" %>
+  <%= f.text_field :first_name %>
+  <br>
+  <%= f.label "Last name" %>
+  <%= f.text_field :last_name %>
+  <br>
+  <%= f.submit "Create Student" %>
+<% end %>
+
+<% button_to "List Students", students_path, html_options = { :method => :get } %>

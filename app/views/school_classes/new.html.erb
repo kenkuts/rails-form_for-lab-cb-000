@@ -1,0 +1,14 @@
+<h1>School Class Form</h1>
+<h2>Create New Class</h2>
+
+<%= form_for @school_class do |f| %>
+  <%= f.label "Class name" %>
+  <%= f.text_field :title %>
+  <br>
+  <%= f.label "Room number" %>
+  <%= f.text_field :room_number %>
+  <br>
+  <%= f.submit "Create School class" %>
+<% end %>
+
+<%= button_to "List Classes", school_classes_path, html_options = { :method => :get } %>

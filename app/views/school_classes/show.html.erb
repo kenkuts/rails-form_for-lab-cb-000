@@ -1,0 +1,7 @@
+<h1>Classes</h1>
+
+<h3>Class Name: <%= @school_class.title %></h3>
+<p>Room Number: <%= @school_class.room_number %></p>
+
+<%= button_to "Edit Class", edit_school_class_path(@school_class), html_options = { :method => :get } %>
+<%= button_to "List School Classes", school_classes_path, html_options = { :method => :get } %>

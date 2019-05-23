@@ -1,0 +1,7 @@
+<h1>List of all the school classes</h1>
+
+<% @school_classes.each do |classes| %>
+  <h2><%= link_to classes.title, school_class_path(classes) %></h2>
+<% end %>
+
+<%= button_to "Create New Class", new_school_class_path, html_options = { :method => :get } %>

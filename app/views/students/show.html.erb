@@ -1,0 +1,5 @@
+<h1>Student</h1>
+
+<h2><%= @student.to_s %></h2>
+<%= button_to "Edit Student", edit_student_path(@student), html_options = { :method => :get } %>
+<%= button_to "List Students", students_path, html_options = { :method => :get } %>
